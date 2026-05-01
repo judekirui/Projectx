@@ -3,7 +3,7 @@
     --text-main: #ffffff;
     --text-muted: #9ea1a7;
     --link-color: #72a1ed;
-    --border-color: #1a2a47; 
+    --border-color: #0b162c; 
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 .home-link {
     color: var(--link-color);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: opacity 0.2s;
 }
@@ -51,7 +51,7 @@ body {
 
 .term-title {
     font-family: 'Linux Libertine', 'Georgia', serif;
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 400;
     letter-spacing: 2px;
