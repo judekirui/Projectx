@@ -1,0 +1,95 @@
+:root {
+    --bg-color: #0b162c;
+    --text-main: #ffffff;
+    --text-muted: #9ea1a7;
+    --link-color: #72a1ed;
+    --border-color: #1a2a47; /* Added for subtle separation */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures it takes up the full viewport height */
+}
+
+/* 10% Header */
+.page-header {
+    flex: 0 0 10vh; /* 10% of viewport height */
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.home-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.home-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* 80% Main Content */
+.page-content {
+    flex: 1 0 80vh; /* 80% of viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the title vertically as shown in your sketch */
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.term-title {
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+/* Term Banner */
+.term-banner {
+    width: 100%;
+    background: linear-gradient(90deg, var(--bg-color) 0%, var(--border-color) 50%, var(--bg-color) 100%);
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border-top: 1px solid var(--link-color);
+    border-bottom: 1px solid var(--link-color);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Updated Term Title to fit nicely inside the banner */
+.term-banner .term-title {
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    font-size: 4rem;
+    margin: 0; 
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--text-main);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for readability */
+}
+
+.term-description {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* 10% Footer */
+.page-footer {
+    flex: 0 0 10vh; /* 10% of viewport height */
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
